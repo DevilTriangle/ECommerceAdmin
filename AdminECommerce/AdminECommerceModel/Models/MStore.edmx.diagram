@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="283760f8186f40dab92641524e5dc43d" Name="Diagram1">
+        <EntityTypeShape EntityType="MStoreModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MStoreModel.Account" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MStoreModel.AspNetRole" Width="1.5" PointX="8.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MStoreModel.AspNetUserClaim" Width="1.5" PointX="13.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MStoreModel.AspNetUserLogin" Width="1.5" PointX="13.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MStoreModel.AspNetUser" Width="1.5" PointX="11" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MStoreModel.Banner" Width="1.5" PointX="10.5" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MStoreModel.Category" Width="1.5" PointX="6" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MStoreModel.Contact" Width="1.5" PointX="5.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MStoreModel.Message" Width="1.5" PointX="5.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MStoreModel.OrderDetail" Width="1.5" PointX="7.5" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="MStoreModel.Order" Width="1.5" PointX="5.25" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MStoreModel.Product" Width="1.5" PointX="8.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MStoreModel.Promotion" Width="1.5" PointX="10.5" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MStoreModel.Review" Width="1.5" PointX="10.5" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MStoreModel.Role" Width="1.5" PointX="0.75" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MStoreModel.sysdiagram" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="MStoreModel.FK_dbo_Accounts_dbo_Roles_RoleID" ManuallyRouted="false" />
+        <AssociationConnector Association="MStoreModel.FK_dbo_Contacts_dbo_Accounts_AccountID" ManuallyRouted="false" />
+        <AssociationConnector Association="MStoreModel.FK_dbo_Messages_dbo_Accounts_AccountID" ManuallyRouted="false" />
+        <AssociationConnector Association="MStoreModel.FK_dbo_Orders_dbo_Accounts_AccountID" ManuallyRouted="false" />
+        <AssociationConnector Association="MStoreModel.FK_dbo_Reviews_dbo_Accounts_AccountId" ManuallyRouted="false" />
+        <AssociationConnector Association="MStoreModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="MStoreModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="MStoreModel.FK_dbo_Banners_dbo_Products_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="MStoreModel.FK_dbo_Products_dbo_Categories_CategoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="MStoreModel.FK_dbo_OrderDetails_dbo_Orders_OrderID" ManuallyRouted="false" />
+        <AssociationConnector Association="MStoreModel.FK_dbo_OrderDetails_dbo_Products_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="MStoreModel.FK_dbo_Promotions_dbo_Products_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="MStoreModel.FK_dbo_Reviews_dbo_Products_ProductId" ManuallyRouted="false" />
+        <AssociationConnector Association="MStoreModel.AspNetUserRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="MStoreModel.Wishlist" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -12,12 +12,13 @@ namespace AdminECommerceModel.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Banner
+    public partial class AspNetUserClaim
     {
         public int Id { get; set; }
-        public string ProductID { get; set; }
-        public string Image { get; set; }
+        public string UserId { get; set; }
+        public string ClaimType { get; set; }
+        public string ClaimValue { get; set; }
     
-        public virtual Product Product { get; set; }
+        public virtual AspNetUser AspNetUser { get; set; }
     }
 }

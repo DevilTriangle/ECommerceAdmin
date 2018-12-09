@@ -18,19 +18,14 @@ namespace AdminECommerceAPI.Repository
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             string includeProperties = "");
-
-        //T GetById(long id);
-        //T GetById(string id);
-        //T Get(Expression<Func<T, bool>> where);
-        //IEnumerable<T> GetAll();
-        //IEnumerable<T> GetMany(Expression<Func<T, bool>> where);
+        void SaveChanges();
 
     }
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
-        private MStoreContext dataContext;
+        private DbContext dataContext;
         private IDbSet<T> dbset;
-        public BaseRepository(MStoreContext dataContext)
+        public BaseRepository(DbContext dataContext)
         {
             this.dataContext = dataContext;
             dbset = dataContext.Set<T>();
@@ -84,6 +79,11 @@ namespace AdminECommerceAPI.Repository
             {
                 return query.ToList();
             }
+        }
+
+        public void SaveChanges()
+        {
+            this.dataContext.SaveChanges();
         }
 
         //public virtual T GetById(long id)

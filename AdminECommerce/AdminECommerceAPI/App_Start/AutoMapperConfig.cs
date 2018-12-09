@@ -1,4 +1,6 @@
-﻿using AutoMapper;
+﻿using AdminECommerceAPI.ViewModel;
+using AdminECommerceModel.Models;
+using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +14,13 @@ namespace AdminECommerceAPI
         {
             Mapper.Initialize(cf =>
             {
-                
+                cf.CreateMap<Category, ResponseCategoryViewModel>();
+                cf.CreateMap<ResponseCategoryViewModel, Category>();
+
+
+
             });
         }
+
     }
 }

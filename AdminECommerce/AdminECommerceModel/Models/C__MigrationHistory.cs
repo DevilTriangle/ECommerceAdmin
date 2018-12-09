@@ -12,12 +12,11 @@ namespace AdminECommerceModel.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Banner
+    public partial class C__MigrationHistory
     {
-        public int Id { get; set; }
-        public string ProductID { get; set; }
-        public string Image { get; set; }
-    
-        public virtual Product Product { get; set; }
+        public string MigrationId { get; set; }
+        public string ContextKey { get; set; }
+        public byte[] Model { get; set; }
+        public string ProductVersion { get; set; }
     }
 }

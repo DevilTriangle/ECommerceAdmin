@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminECommerceWeb", "AdminE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminECommerceModel", "AdminECommerceModel\AdminECommerceModel.csproj", "{120F1330-BA6B-4049-B28C-39EEFF332C00}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Admin.Ecommerce.Database", "Admin.Ecommerce.Database\Admin.Ecommerce.Database.sqlproj", "{5949AC52-8A2D-4C71-9FFD-0A47C139DBCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{120F1330-BA6B-4049-B28C-39EEFF332C00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{120F1330-BA6B-4049-B28C-39EEFF332C00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{120F1330-BA6B-4049-B28C-39EEFF332C00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5949AC52-8A2D-4C71-9FFD-0A47C139DBCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5949AC52-8A2D-4C71-9FFD-0A47C139DBCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5949AC52-8A2D-4C71-9FFD-0A47C139DBCB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5949AC52-8A2D-4C71-9FFD-0A47C139DBCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5949AC52-8A2D-4C71-9FFD-0A47C139DBCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5949AC52-8A2D-4C71-9FFD-0A47C139DBCB}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

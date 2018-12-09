@@ -12,26 +12,18 @@ namespace AdminECommerceModel.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Order
+    public partial class AspNetRole
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Order()
+        public AspNetRole()
         {
-            this.OrderDetails = new HashSet<OrderDetail>();
+            this.AspNetUsers = new HashSet<AspNetUser>();
         }
     
-        public string ID { get; set; }
-        public string AccountID { get; set; }
-        public System.DateTime DatePurchased { get; set; }
-        public string Status { get; set; }
-        public double Total { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
-        public string Phone { get; set; }
-        public string Address { get; set; }
-        public string Email { get; set; }
     
-        public virtual Account Account { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+        public virtual ICollection<AspNetUser> AspNetUsers { get; set; }
     }
 }

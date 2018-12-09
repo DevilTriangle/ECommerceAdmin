@@ -73,23 +73,91 @@
       <DependentUpon>201812070535404_finalMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Account.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ApplicationUser.cs" />
-    <Compile Include="Models\Banner.cs" />
-    <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\Contact.cs" />
-    <Compile Include="Models\Message.cs" />
+    <Compile Include="Models\AspNetRole.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUser.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserClaim.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserLogin.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Banner.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Category.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Contact.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C__MigrationHistory.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Message.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MStore.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MStore.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MStore.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MStore.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MStore.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\MStoreContext.cs" />
-    <Compile Include="Models\Order.cs" />
-    <Compile Include="Models\OrderDetail.cs" />
-    <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\Promotion.cs" />
-    <Compile Include="Models\Review.cs" />
-    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\Order.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderDetail.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Promotion.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Review.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Role.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>MStore.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <EntityDeploy Include="Models\MStore.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MStore.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\MStore.edmx.diagram">
+      <DependentUpon>MStore.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +173,21 @@
     <EmbeddedResource Include="Migrations\201812070535404_finalMigration.resx">
       <DependentUpon>201812070535404_finalMigration.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\MStore.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MStore.edmx</DependentUpon>
+      <LastGenOutput>MStore.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\MStore.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MStore.edmx</DependentUpon>
+      <LastGenOutput>MStore.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
